@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://calebq2010.github.io/portfolio-page/",
   "dependencies": {
+    "bootstrap": "^4.1.3",
     "gh-pages": "^1.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
