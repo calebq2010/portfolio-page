@@ -1,43 +1,38 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
-import { Navbar } from 'react-bootstrap';
-import { Nav } from 'react-bootstrap';
-import { NavItem } from 'react-bootstrap';
-import { NavDropdown } from 'react-bootstrap';
-import { MenuItem } from 'react-bootstrap';
-import logo from './logo.svg';
-import './App.css';
+import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isWideEnough: false,
+        };
 
-        <Navbar>
-          <Navbar.Header>
-            <Navbar.Brand>
-              <a href="#home">Caleb Quinn</a>
-            </Navbar.Brand>
-          </Navbar.Header>
-          <Nav>
-            <NavItem eventKey={1} href="#">
-              about me
-            </NavItem>
-            <NavItem eventKey={2} href="#">
-              portfolio
-            </NavItem>
-            <NavItem eventKey={3} href="#">
-              contact me
-            </NavItem>
-          </Nav>
-        </Navbar>
+    }
 
-          <h1 className="App-title">Caleb Quinns Portfolio Page In The Works!</h1>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <Router>
+                <Navbar color="indigo" dark expand="lg" scrolling>
+                    <NavbarBrand href="/">
+                        <strong>Navbar</strong>
+                    </NavbarBrand>
+                    <NavbarNav>
+                          <NavItem active>
+                              <NavLink to="#">About Me</NavLink>
+                          </NavItem>
+                          <NavItem>
+                              <NavLink to="#">Portfolio</NavLink>
+                          </NavItem>
+                          <NavItem>
+                              <NavLink to="#">Contact</NavLink>
+                          </NavItem>
+                    </NavbarNav>
+                </Navbar>
+            </Router>
+        );
+    }
 }
 
 export default App;
