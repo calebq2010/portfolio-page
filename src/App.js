@@ -14,9 +14,9 @@ class App extends React.Component {
     render() {
         return (
             <Router>
-                <Navbar color="indigo" dark expand="lg" scrolling>
+                <Navbar color="indigo" dark expand="lg" sticky = "top">
                     <NavbarBrand href="/">
-                        <strong>Navbar</strong>
+                        <strong>Caleb Quinn</strong>
                     </NavbarBrand>
                     <NavbarNav>
                           <NavItem active>
