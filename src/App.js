@@ -3,18 +3,12 @@ import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLi
 import { BrowserRouter as Router } from 'react-router-dom';
 
 class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isWideEnough: false,
-        };
-
-    }
+    
 
     render() {
         return (
             <Router>
-                <Navbar color="indigo" dark expand="lg" sticky = "top">
+                <Navbar color="warning-color" dark expand="lg" sticky = "top">
                     <NavbarBrand href="/">
                         <strong>Caleb Quinn</strong>
                     </NavbarBrand>
