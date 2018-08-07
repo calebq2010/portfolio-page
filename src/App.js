@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact';
-import { HashRouter as Router } from 'react-router-dom';
+import { HashRouter as Router, Route} from 'react-router-dom';
 import About from "./about";
+import Portfolio from "./portfolio";
+import Contact from "./contact";
 
 class App extends React.Component {
     

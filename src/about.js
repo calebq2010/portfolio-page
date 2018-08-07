@@ -3,7 +3,12 @@ import React, { Component } from "react";
 class About extends Component {
     render(){
         return(
-            <h1>Hello this is my about page</h1>                
+            <div className="jumboSize">
+                <div className="jumbotron">
+                    <h1 className="display-4">This is my About Page!</h1>
+                </div>
+            </div>
+                            
         );
     }
 }

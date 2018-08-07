@@ -3,7 +3,11 @@ import React, { Component } from "react";
 class Porfolio extends Component {
     render(){
         return(
-            <h1>Hello this is my portfoilo page</h1>                
+            <div className="jumboSize">
+                <div className="jumbotron">
+                    <h1 className="display-4">This is my Porfolio Page!</h1>
+                </div>
+            </div>                
         );
     }
 }
