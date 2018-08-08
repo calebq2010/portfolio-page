@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact';
 import { HashRouter as Router, Route} from 'react-router-dom';
+import "./index.css";
 import About from "./about";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
@@ -18,13 +19,13 @@ class App extends React.Component {
                         </NavbarBrand>
                         <NavbarNav>
                             <NavItem>
-                                <NavLink to="/about">About Me</NavLink>
+                                <NavLink to="/about" className="textLink"><i className="fas fa-user-tie fa-lg"></i>  About Me</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/portfolio">Portfolio</NavLink>
+                                <NavLink to="/portfolio" className="textLink"><i class="fas fa-briefcase fa-lg"></i>  Portfolio</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/contact">Contact</NavLink>
+                                <NavLink to="/contact" className="textLink"><i class="fas fa-address-book fa-lg"></i>  Contact</NavLink>
                             </NavItem>
                         </NavbarNav>
                     </Navbar>
