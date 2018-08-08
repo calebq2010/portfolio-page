@@ -22,10 +22,10 @@ class App extends React.Component {
                                 <NavLink to="/about" className="textLink"><i className="fas fa-user-tie fa-lg"></i>  About Me</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/portfolio" className="textLink"><i class="fas fa-briefcase fa-lg"></i>  Portfolio</NavLink>
+                                <NavLink to="/portfolio" className="textLink"><i className="fas fa-briefcase fa-lg"></i>  Portfolio</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/contact" className="textLink"><i class="fas fa-address-book fa-lg"></i>  Contact</NavLink>
+                                <NavLink to="/contact" className="textLink"><i className="fas fa-address-book fa-lg"></i>  Contact</NavLink>
                             </NavItem>
                         </NavbarNav>
                     </Navbar>
