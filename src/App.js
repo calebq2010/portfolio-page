@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact';
 import { HashRouter as Router, Route} from 'react-router-dom';
 import "./index.css";
+import logo from './web-glyph.png';
 import About from "./about";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
@@ -15,7 +16,7 @@ class App extends React.Component {
                 <div>
                     <Navbar color="warning-color" dark expand="lg" sticky = "top">
                         <NavbarBrand href="/">
-                            <strong>Caleb Quinn</strong>
+                            <img src={logo} className="img-fluid logoImage" alt=""/>
                         </NavbarBrand>
                         <NavbarNav>
                             <NavItem>

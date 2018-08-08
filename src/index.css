@@ -12,10 +12,15 @@ body {
   font-size: 2em;
 }
 
+.logoImage {
+  width: 4em;
+  height: 4em;
+  color: white;
+}
 /* media query to shrink text if lower than 500px */
 @media only screen and (max-width: 500px) {
 
-  .textLink { 
+  .textLink .logoImage { 
      font-size: 10px; 
   }
 
