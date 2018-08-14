@@ -17,6 +17,15 @@ body {
   height: 4em;
   color: white;
 }
+
+.aboutImg {
+  border-radius: 50%;
+  height: 20%;
+  width: 20%;
+  border: 10px solid #ffbb33;
+
+}
+
 /* media query to shrink text if lower than 500px */
 @media only screen and (max-width: 500px) {
 
