@@ -26,6 +26,18 @@ body {
 
 }
 
+.aboutMeDiv {
+  width: 50%;
+  height: 50%;
+  padding-top: 2%;
+}
+
+.section-one {
+  width: 100%;
+  height: 25%;
+  background-color: #f8f8f8;
+}
+
 /* media query to shrink text if lower than 500px */
 @media only screen and (max-width: 500px) {
 
